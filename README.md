@@ -1,5 +1,36 @@
-# Vue 3 + TypeScript + Vite
+### Whois and Domain Lookup Tool
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+This website provides a tool for querying domain and Whois information. Users can quickly access key details like website ownership, registration dates, and last updated dates. With a user-friendly interface, it is suitable for both personal and corporate use. For more information, visit the [website](https://whois.ahmetcanuzumcu.com.tr/).
 
-Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
+<p align="center">
+  <br>
+  <img src="/public/site.gif" width="600" />
+  <br>
+</p>
+
+## Build Setup For Frontend
+
+```bash
+# install dependencies
+pnpm install
+
+# serve with hot reload at localhost:5173
+pnpm dev
+
+# build for production with minification
+pnpm build
+```
+
+## Build Setup For Backend
+
+```bash
+# install dependencies
+pnpm install
+
+# serve with hot reload at localhost:3000
+pnpm dev
+
+# start for production
+pnpm start
+
+```
