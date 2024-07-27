@@ -46,7 +46,7 @@ export function useDomainCheck() {
       }
     }
     const requests = requestDomains.map(async (domain) => {
-      return await fetch(`http://localhost:3000/domain`, {
+      return await fetch(`https://vue-domain-and-whois.onrender.com/domain`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
