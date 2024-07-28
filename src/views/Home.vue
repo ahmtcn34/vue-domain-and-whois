@@ -61,7 +61,7 @@ const updateSearchParam = function () {
         </div>
     </form>
     <div class="space-y-4 mt-12 " v-if="domainsCheckState?.length">
-        <div class="flex flex-col md:flex-row  p-4 justify-between md:items-center   rounded bg-gray-900 "
+        <div class="flex flex-col md:flex-row  p-4 justify-between md:items-center   rounded bg-zinc-800 "
             v-for="data in domainsCheckState.sort((a, b) => a.data?.isDomainAvailable - b.data?.isDomainAvailable)"
             :key="data.domain">
             {{ data.domain }}
