@@ -198,7 +198,7 @@ onMounted(async () => {
                                     unit: 'day',
                                     roundingMethod: 'ceil',
                                     locale: tr
-                                })
+                                }) || ' - '
                                 }}
                             </div>
                             <div class="flex flex-col xs:flex-row flex-wrap">
@@ -207,7 +207,7 @@ onMounted(async () => {
                                     unit: 'year',
                                     roundingMethod: 'ceil',
                                     locale: tr
-                                })
+                                }) || ' - '
                                 }}
                             </div>
                         </div>
