@@ -212,40 +212,7 @@ onMounted(async () => {
                             </div>
                         </div>
                         <div v-else>
-                            <div class="flex flex-col xs:flex-row mb-2 flex-wrap">
-                                <h4 class="font-bold me-2 text-zinc-300">Kayıt Tarihi: </h4>
-                                <template
-                                    v-if="data?.data['Created on..............'] && typeof data?.data['Created on..............'] === 'string'">
-                                    {{ format(data?.data['Created on..............']!, 'dd.MM.yyyy') }}
-                                </template>
-                                <template v-else> - </template>
-                            </div>
-                            <div class="flex flex-col xs:flex-row mb-2 flex-wrap">
-                                <h4 class="font-bold me-2 text-zinc-300 ">Güncelleme Tarihi: </h4>
-                                <template
-                                    v-if="data?.data['Last Update Time'] && typeof data?.data['Last Update Time'] === 'string'">
-                                    {{ format(data?.data['Last Update Time']!, 'dd.MM.yyyy') || ' - ' }}
-                                </template>
-                                <template v-else> - </template>
-                            </div>
-                            <div class="flex flex-col xs:flex-row mb-2  flex-wrap">
-                                <h4 class="font-bold me-2 text-zinc-300 ">Bitiş Tarihi: </h4>
-                                <template
-                                    v-if="data?.data['Expires on..............'] && typeof data?.data['Expires on..............'] === 'string'">
-                                    {{ format(data?.data['Expires on..............']!, 'dd.MM.yyyy') || ' - ' }}
-                                </template>
-                                <template v-else> - </template>
-                            </div>
-                            <div class="flex flex-col xs:flex-row mb-2 flex-wrap">
-                                <h4 class="font-bold me-2 text-zinc-300 ">Kalan Gün: </h4>
-                                -
-
-                            </div>
-                            <div class="flex flex-col xs:flex-row flex-wrap">
-                                <h4 class="font-bold me-2 text-zinc-300 ">Domain Yaşı: </h4>
-                                -
-
-                            </div>
+                            asdasd
                         </div>
                     </template>
                 </div>
