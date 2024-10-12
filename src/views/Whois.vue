@@ -13,7 +13,7 @@ const search = computed({
     get() {
         return route.query.whois ?? ''
     },
-    set(whois) {
+    set(whois: string) {
         router.push({ query: { ...route.query, whois } })
     }
 });

@@ -1,7 +1,7 @@
 export function useWhoisCheck() {
     function checkWhoisAvailability(domain: string) {
         if (!domain.trim().length) return;
-        return fetch(`https://vue-domain-and-whois.onrender.com/whois`, {
+        return fetch(`http://localhost:3000/whois`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

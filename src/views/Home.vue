@@ -3,7 +3,7 @@ import { ref, computed, onMounted } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
 import isValidDomain from 'is-valid-domain';
 import { toast } from 'vue3-toastify';
-import { useDomainCheck } from '@/composables/domaincheck.ts';
+import { useDomainCheck } from '@/composables/domaincheck';
 const router = useRouter();
 const route = useRoute();
 

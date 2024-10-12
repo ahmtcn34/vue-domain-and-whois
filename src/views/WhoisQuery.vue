@@ -214,15 +214,24 @@ onMounted(async () => {
                         <div v-else>
                             <div class="flex flex-col xs:flex-row mb-2 flex-wrap">
                                 <h4 class="font-bold me-2 text-zinc-300">Kayıt Tarihi: </h4>
-                                {{ format(data?.data['Created on..............']!, 'dd.MM.yyyy') || ' - ' }}
+                                <template v-if="data?.data['Created on..............']">
+                                    {{ format(data?.data['Created on..............']!, 'dd.MM.yyyy') || ' - ' }}
+                                </template>
+                                <template v-else> - </template>
                             </div>
                             <div class="flex flex-col xs:flex-row mb-2 flex-wrap">
                                 <h4 class="font-bold me-2 text-zinc-300 ">Güncelleme Tarihi: </h4>
-                                {{ format(data?.data['Last Update Time']!, 'dd.MM.yyyy') || ' - ' }}
+                                <template v-if="data?.data['Last Update Time']">
+                                    {{ format(data?.data['Last Update Time']!, 'dd.MM.yyyy') || ' - ' }}
+                                </template>
+                                <template v-else> - </template>
                             </div>
                             <div class="flex flex-col xs:flex-row mb-2  flex-wrap">
                                 <h4 class="font-bold me-2 text-zinc-300 ">Bitiş Tarihi: </h4>
-                                {{ format(data?.data['Expires on..............']!, 'dd.MM.yyyy') || ' - ' }}
+                                <template v-if="data?.data['Expires on..............']">
+                                    {{ format(data?.data['Expires on..............']!, 'dd.MM.yyyy') || ' - ' }}
+                                </template>
+                                <template v-else> - </template>
                             </div>
                             <div class="flex flex-col xs:flex-row mb-2 flex-wrap">
                                 <h4 class="font-bold me-2 text-zinc-300 ">Kalan Gün: </h4>
@@ -237,7 +246,7 @@ onMounted(async () => {
                                 <h4 class="font-bold me-2 text-zinc-300 ">Domain Yaşı: </h4>
                                 {{ formatDistanceStrict(new Date(), data?.data['Created on..............']!, {
                                     unit: 'year',
-                                    roundingMethod: 'ceil',
+                                    roundingMethod: 'floor',
                                     locale: tr
                                 })
                                 }}

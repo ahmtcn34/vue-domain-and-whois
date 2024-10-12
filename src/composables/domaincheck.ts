@@ -6,7 +6,6 @@ interface IState {
   data: any;
   reason?: any;
 }
-
 export function useDomainCheck() {
   const domainsCheckState = ref<IState[]>();
 
@@ -46,7 +45,7 @@ export function useDomainCheck() {
       }
     }
     const requests = requestDomains.map(async (domain) => {
-      return await fetch(`https://vue-domain-and-whois.onrender.com/domain`, {
+      return await fetch(`http://localhost:3000/domain`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

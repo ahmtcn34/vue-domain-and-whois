@@ -17,7 +17,7 @@
     "noEmit": true,
     "jsx": "preserve",
     "paths": {
-      "@/*": ["src/*"]
+      "@/*": ["src/*", "src/composables/*.ts"]
     },
     /* Linting */
     "strict": true,
@@ -25,7 +25,7 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "exclude": ["node_modules"],
+  "exclude": ["node_modules", "public"],
 
   "include": [
     "src/**/*.ts",
