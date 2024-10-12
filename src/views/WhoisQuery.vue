@@ -179,7 +179,7 @@ onMounted(async () => {
                     <WhoisQueryDatesLoader v-if="loading" />
                     <template v-else>
                         <h3 class="text-lg text-zinc-200 font-bold mb-6">Önemli Tarihler</h3>
-                        <div v-if="!data?.data.isTldTr">
+                        <div v-if="data?.data.isTldTr === false">
                             <div class="flex flex-col xs:flex-row mb-2 flex-wrap">
                                 <h4 class="font-bold me-2 text-zinc-300">Kayıt Tarihi: </h4>
                                 {{ format(data?.data['Created Date']!, 'dd.MM.yyyy') || ' - ' }}
