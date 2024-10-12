@@ -238,30 +238,12 @@ onMounted(async () => {
                             </div>
                             <div class="flex flex-col xs:flex-row mb-2 flex-wrap">
                                 <h4 class="font-bold me-2 text-zinc-300 ">Kalan Gün: </h4>
-                                <template
-                                    v-if="data?.data['Expires on..............'] && typeof data?.data['Expires on..............'] === 'string'">
-                                    {{ formatDistanceStrict(data?.data['Expires on..............']!, new Date(), {
-                                        unit: 'day',
-                                        roundingMethod: 'ceil',
-                                        locale: tr
-                                    })
-                                    }}
-                                </template>
-                                <template v-else> - </template>
+                                -
 
                             </div>
                             <div class="flex flex-col xs:flex-row flex-wrap">
                                 <h4 class="font-bold me-2 text-zinc-300 ">Domain Yaşı: </h4>
-                                <template
-                                    v-if="data?.data['Expires on..............'] && typeof data?.data['Expires on..............'] === 'string'">
-                                    {{ formatDistanceStrict(new Date(), data?.data['Created on..............']!, {
-                                        unit: 'year',
-                                        roundingMethod: 'floor',
-                                        locale: tr
-                                    })
-                                    }}
-                                </template>
-                                <template v-else> - </template>
+                                -
 
                             </div>
                         </div>
